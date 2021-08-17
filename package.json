@@ -2,8 +2,13 @@
     "name": "logic-language",
     "displayName": "Ori WotW Logic Language",
     "description": "Support for the areas.wotw language",
-    "version": "0.0.1",
+    "version": "0.0.2",
+    "publisher": "orirando",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ori-rando/logic-language"
+    },
     "engines": {
         "vscode": "^1.59.0"
     },
