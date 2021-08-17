@@ -1,0 +1,346 @@
+{
+    "Arcing": {
+        "prefix": "Arcing",
+        "body": [ "Arcing" ]
+    },
+    "Bash": {
+        "prefix": "Bash",
+        "body": [ "Bash" ]
+    },
+    "Blaze": {
+        "prefix": "Blaze",
+        "body": [ "Blaze" ]
+    },
+    "Bow": {
+        "prefix": "Bow",
+        "body": [ "Bow" ]
+    },
+    "BreakCrystal": {
+        "prefix": "BreakCrystal",
+        "body": [ "BreakCrystal" ]
+    },
+    "Burrow": {
+        "prefix": "Burrow",
+        "body": [ "Burrow" ]
+    },
+    "BurrowsTP": {
+        "prefix": "BurrowsTP",
+        "body": [ "BurrowsTP" ]
+    },
+    "Catalyst": {
+        "prefix": "Catalyst",
+        "body": [ "Catalyst" ]
+    },
+    "Dash": {
+        "prefix": "Dash",
+        "body": [ "Dash" ]
+    },
+    "Deflector": {
+        "prefix": "Deflector",
+        "body": [ "Deflector" ]
+    },
+    "DenTP": {
+        "prefix": "DenTP",
+        "body": [ "DenTP" ]
+    },
+    "DepthsTP": {
+        "prefix": "DepthsTP",
+        "body": [ "DepthsTP" ]
+    },
+    "DoubleJump": {
+        "prefix": "DoubleJump",
+        "body": [ "DoubleJump" ]
+    },
+    "EastPoolsTP": {
+        "prefix": "EastPoolsTP",
+        "body": [ "EastPoolsTP" ]
+    },
+    "EastWastesTP": {
+        "prefix": "EastWastesTP",
+        "body": [ "EastWastesTP" ]
+    },
+    "EastWoodsTP": {
+        "prefix": "EastWoodsTP",
+        "body": [ "EastWoodsTP" ]
+    },
+    "EnergyHarvest": {
+        "prefix": "EnergyHarvest",
+        "body": [ "EnergyHarvest" ]
+    },
+    "Flap": {
+        "prefix": "Flap",
+        "body": [ "Flap" ]
+    },
+    "Flash": {
+        "prefix": "Flash",
+        "body": [ "Flash" ]
+    },
+    "Fracture": {
+        "prefix": "Fracture",
+        "body": [ "Fracture" ]
+    },
+    "free": {
+        "prefix": "free",
+        "body": [ "free" ]
+    },
+    "GladesTP": {
+        "prefix": "GladesTP",
+        "body": [ "GladesTP" ]
+    },
+    "Glide": {
+        "prefix": "Glide",
+        "body": [ "Glide" ]
+    },
+    "gorlek": {
+        "prefix": "gorlek",
+        "body": [ "gorlek" ]
+    },
+    "Grapple": {
+        "prefix": "Grapple",
+        "body": [ "Grapple" ]
+    },
+    "Grenade": {
+        "prefix": "Grenade",
+        "body": [ "Grenade" ]
+    },
+    "Hammer": {
+        "prefix": "Hammer",
+        "body": [ "Hammer" ]
+    },
+    "HammerBreak": {
+        "prefix": "HammerBreak",
+        "body": [ "HammerBreak" ]
+    },
+    "HollowTP": {
+        "prefix": "HollowTP",
+        "body": [ "HollowTP" ]
+    },
+    "InnerRuinsTP": {
+        "prefix": "InnerRuinsTP",
+        "body": [ "InnerRuinsTP" ]
+    },
+    "Launch": {
+        "prefix": "Launch",
+        "body": [ "Launch" ]
+    },
+    "LifeHarvest": {
+        "prefix": "LifeHarvest",
+        "body": [ "LifeHarvest" ]
+    },
+    "Magnet": {
+        "prefix": "Magnet",
+        "body": [ "Magnet" ]
+    },
+    "MarshTP": {
+        "prefix": "MarshTP",
+        "body": [ "MarshTP" ]
+    },
+    "moki": {
+        "prefix": "moki",
+        "body": [ "moki" ]
+    },
+    "OuterRuinsTP": {
+        "prefix": "OuterRuinsTP",
+        "body": [ "OuterRuinsTP" ]
+    },
+    "Overflow": {
+        "prefix": "Overflow",
+        "body": [ "Overflow" ]
+    },
+    "ReachTP": {
+        "prefix": "ReachTP",
+        "body": [ "ReachTP" ]
+    },
+    "RemoveKillPlane": {
+        "prefix": "RemoveKillPlane",
+        "body": [ "RemoveKillPlane" ]
+    },
+    "Regenerate": {
+        "prefix": "Regenerate",
+        "body": [ "Regenerate" ]
+    },
+    "Seir": {
+        "prefix": "Seir",
+        "body": [ "Seir" ]
+    },
+    "Sentry": {
+        "prefix": "Sentry",
+        "body": [ "Sentry" ]
+    },
+    "ShriekTP": {
+        "prefix": "ShriekTP",
+        "body": [ "ShriekTP" ]
+    },
+    "Shuriken": {
+        "prefix": "Shuriken",
+        "body": [ "Shuriken" ]
+    },
+    "Spear": {
+        "prefix": "Spear",
+        "body": [ "Spear" ]
+    },
+    "SpearBreak": {
+        "prefix": "SpearBreak",
+        "body": [ "SpearBreak" ]
+    },
+    "Sticky": {
+        "prefix": "Sticky",
+        "body": [ "Sticky" ]
+    },
+    "Sword": {
+        "prefix": "Sword",
+        "body": [ "Sword" ]
+    },
+    "TripleJump": {
+        "prefix": "TripleJump",
+        "body": [ "TripleJump" ]
+    },
+    "Thorn": {
+        "prefix": "Thorn",
+        "body": [ "Thorn" ]
+    },
+    "UltraBash": {
+        "prefix": "UltraBash",
+        "body": [ "UltraBash" ]
+    },
+    "UltraGrapple": {
+        "prefix": "UltraGrapple",
+        "body": [ "UltraGrapple" ]
+    },
+    "unsafe": {
+        "prefix": "unsafe",
+        "body": [ "unsafe" ]
+    },
+    "WallJump": {
+        "prefix": "WallJump",
+        "body": [ "WallJump" ]
+    },
+    "WaterBreath": {
+        "prefix": "WaterBreath",
+        "body": [ "WaterBreath" ]
+    },
+    "WaterDash": {
+        "prefix": "WaterDash",
+        "body": [ "WaterDash" ]
+    },
+    "Water": {
+        "prefix": "Water",
+        "body": [ "Water" ]
+    },
+    "WellspringTP": {
+        "prefix": "WellspringTP",
+        "body": [ "WellspringTP" ]
+    },
+    "WestPoolsTP": {
+        "prefix": "WestPoolsTP",
+        "body": [ "WestPoolsTP" ]
+    },
+    "WestWastesTP": {
+        "prefix": "WestWastesTP",
+        "body": [ "WestWastesTP" ]
+    },
+    "WestWoodsTP": {
+        "prefix": "WestWoodsTP",
+        "body": [ "WestWoodsTP" ]
+    },
+    "WillowTP": {
+        "prefix": "WillowTP",
+        "body": [ "WillowTP" ]
+    },
+    "Blaze=": {
+        "prefix": "Blaze=",
+        "body": [ "Blaze=" ]
+    },
+    "Boss=": {
+        "prefix": "Boss=",
+        "body": [ "Boss=" ]
+    },
+    "Bow=": {
+        "prefix": "Bow=",
+        "body": [ "Bow=" ]
+    },
+    "BreakWall=": {
+        "prefix": "BreakWall=",
+        "body": [ "BreakWall=" ]
+    },
+    "Damage=": {
+        "prefix": "Damage=",
+        "body": [ "Damage=" ]
+    },
+    "Danger=": {
+        "prefix": "Danger=",
+        "body": [ "Danger=" ]
+    },
+    "Energy=": {
+        "prefix": "Energy=",
+        "body": [ "Energy=" ]
+    },
+    "Flash=": {
+        "prefix": "Flash=",
+        "body": [ "Flash=" ]
+    },
+    "Grenade=": {
+        "prefix": "Grenade=",
+        "body": [ "Grenade=" ]
+    },
+    "Health=": {
+        "prefix": "Health=",
+        "body": [ "Health=" ]
+    },
+    "Keystone=": {
+        "prefix": "Keystone=",
+        "body": [ "Keystone=" ]
+    },
+    "Ore=": {
+        "prefix": "Ore=",
+        "body": [ "Ore=" ]
+    },
+    "Sentry=": {
+        "prefix": "Sentry=",
+        "body": [ "Sentry=" ]
+    },
+    "SentryJump=": {
+        "prefix": "SentryJump=",
+        "body": [ "SentryJump=" ]
+    },
+    "SwordSJump=": {
+        "prefix": "SwordSJump=",
+        "body": [ "SwordSJump=" ]
+    },
+    "HammerSJump=": {
+        "prefix": "HammerSJump=",
+        "body": [ "HammerSJump=" ]
+    },
+    "SentryBreak=": {
+        "prefix": "SentryBreak=",
+        "body": [ "SentryBreak=" ]
+    },
+    "SentryBurn=": {
+        "prefix": "SentryBurn=",
+        "body": [ "SentryBurn=" ]
+    },
+    "ShardSlot=": {
+        "prefix": "ShardSlot=",
+        "body": [ "ShardSlot=" ]
+    },
+    "Shuriken=": {
+        "prefix": "Shuriken=",
+        "body": [ "Shuriken=" ]
+    },
+    "ShurikenBreak=": {
+        "prefix": "ShurikenBreak=",
+        "body": [ "ShurikenBreak=" ]
+    },
+    "Spear=": {
+        "prefix": "Spear=",
+        "body": [ "Spear=" ]
+    },
+    "SpiritLight=": {
+        "prefix": "SpiritLight=",
+        "body": [ "SpiritLight=" ]
+    },
+    "Combat=": {
+        "prefix": "Combat=",
+        "body": [ "Combat=" ]
+    }
+}

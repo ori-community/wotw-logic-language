@@ -8,7 +8,8 @@
         "vscode": "^1.59.0"
     },
     "categories": [
-        "Programming Languages"
+        "Programming Languages",
+        "Snippets"
     ],
     "contributes": {
         "languages": [{
@@ -21,6 +22,10 @@
             "language": "ori-wotw-logic",
             "scopeName": "source.wotw",
             "path": "./syntaxes/ori-wotw-logic.tmLanguage.json"
+        }],
+        "snippets": [{
+            "language": "ori-wotw-logic",
+            "path": "./snippets/snippets.json"
         }]
     }
 }
