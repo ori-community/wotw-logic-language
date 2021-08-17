@@ -1,0 +1,9 @@
+{
+    "comments": {
+        "lineComment": "#"
+    },
+    "indentationRules": {
+        "increaseIndentPattern": "^.*:$",
+        "decreaseIndentPattern": "\\n" // Never matches
+    }
+}

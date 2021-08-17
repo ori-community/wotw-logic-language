@@ -1,0 +1,26 @@
+{
+    "name": "logic-language",
+    "displayName": "Ori WotW Logic Language",
+    "description": "Support for the areas.wotw language",
+    "version": "0.0.1",
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.59.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ori-wotw-logic",
+            "aliases": ["Ori Wotw Logic", "ori-wotw-logic"],
+            "extensions": [".wotw"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ori-wotw-logic",
+            "scopeName": "source.wotw",
+            "path": "./syntaxes/ori-wotw-logic.tmLanguage.json"
+        }]
+    }
+}

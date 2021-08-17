@@ -1,0 +1,77 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "Ori 2 Logic Language",
+    "scopeName": "source.wotw",
+    "patterns": [
+        { "include": "#keyword" },
+        { "include": "#requirement" },
+        { "include": "#comment" }
+    ],
+    "repository": {
+        "keyword": {
+            "patterns": [
+                {
+                    "match": "\\b(requirement|region) (\\w+(?:.\\w+)?):",
+                    "captures": {
+                        "1": { "name": "keyword" },
+                        "2": { "name": "entity.name.function" }
+                    }
+                },
+                {
+                    "match": "\\b(anchor) (\\w+(?:.\\w+)?)( at -?\\d+, ?-?\\d+)?:",
+                    "captures": {
+                        "1": { "name": "keyword" },
+                        "2": { "name": "entity.name.function" },
+                        "3": { "name": "variable" }
+                    }
+                },
+                {
+                    "match": "\\b(state|quest|pickup|conn) (\\w+(?:.\\w+)?):",
+                    "captures": {
+                        "1": { "name": "entity.name.type" },
+                        "2": { "name": "entity.name.function" }
+                    }
+                },
+                {
+                    "match": "\\b(refill) (Full|Checkpoint|(?:Health|Energy)=\\d+)\\b",
+                    "captures": {
+                        "1": { "name": "keyword" },
+                        "2": { "name": "variable.other.enummember" }
+                    }
+                },
+                {
+                    "match": "\\b(OR|, *)\\b",
+                    "name": "keyword.control"
+                }
+            ]
+        },
+        "requirement": {
+            "patterns": [
+                {
+                    "match": "\\bfree\\b",
+                    "name": "variable.other.constant"
+                },
+                {
+                    "match": "\\b(moki|gorlek|unsafe)\\b",
+                    "name": "variable.other.enummember"
+                },
+                {
+                    "match": "\\b(Blaze|Boss|Bow|BreakWall|Damage|Danger|Energy|Flash|Grenade|Health|Keystone|Ore|Sentry|SentryJump|SwordSJump|HammerSJump|SentryBreak|SentryBurn|ShardSlot|Shuriken|ShurikenBreak|Spear|SpiritLight)=\\d+\\b",
+                    "name": "string"
+                },
+                {
+                    "match": "\\b(Arcing|Bash|Blaze|Bow|BreakCrystal|Burrow|BurrowsTP|Catalyst|Dash|Deflector|DenTP|DepthsTP|DoubleJump|EastPoolsTP|EastWastesTP|EastWoodsTP|EnergyHarvest|Flap|Flash|Fracture|GladesTP|Glide|Grapple|Grenade|Hammer|HammerBreak|HollowTP|InnerRuinsTP|Launch|LifeHarvest|Magnet|MarshTP|OuterRuinsTP|Overflow|ReachTP|RemoveKillPlane|Regenerate|Seir|Sentry|ShriekTP|Shuriken|Spear|SpearBreak|Sticky|Sword|TripleJump|Thorn|UltraBash|UltraGrapple|WallJump|WaterBreath|WaterDash|Water|WellspringTP|WestPoolsTP|WestWastesTP|WestWoodsTP|WillowTP)\\b",
+                    "name": "string"
+                },
+                {
+                    "match": "\\bCombat=((\\d+x)?(Mantis|Slug|WeakSlug|BombSlug|CorruptSlug|SneezeSlug|ShieldSlug|Lizard|Bat|Hornbug|Skeeto|SmallSkeeto|Bee|Nest|Crab|SpinCrab|Tentacle|Balloon|Miner|MaceMiner|ShieldMiner|CrystalMiner|ShieldCrystalMiner|Sandworm|Spiderling|EnergyRefill)\\+)*(\\d+x)?(Mantis|Slug|WeakSlug|BombSlug|CorruptSlug|SneezeSlug|ShieldSlug|Lizard|Bat|Hornbug|Skeeto|SmallSkeeto|Bee|Nest|Crab|SpinCrab|Tentacle|Balloon|Miner|MaceMiner|ShieldMiner|CrystalMiner|ShieldCrystalMiner|Sandworm|Spiderling|EnergyRefill)\\b",
+                    "name": "string"
+                }
+            ]
+        },
+        "comment": {
+            "match": "#.*",
+            "name": "comment"
+        }
+    }
+}
