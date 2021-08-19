@@ -2,6 +2,7 @@
     "comments": {
         "lineComment": "#"
     },
+    "wordPattern": "\\w+(\\.\\w+)?",
     "indentationRules": {
         "increaseIndentPattern": "^.*:$",
         "decreaseIndentPattern": "\\n" // Never matches
