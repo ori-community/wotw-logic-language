@@ -1,8 +1,8 @@
 # Ori 2 Logic Language
 
-## Install
-
 Language support for editing areas.wotw in [Visual Studio Code](https://code.visualstudio.com/)
+
+## Install
 
 How to use:
 
