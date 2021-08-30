@@ -52,7 +52,7 @@
                     "name": "variable.other.constant"
                 },
                 {
-                    "match": "\\b(moki|gorlek|unsafe)\\b",
+                    "match": "\\b(moki|gorlek|kii|unsafe)\\b",
                     "name": "variable.other.enummember"
                 },
                 {

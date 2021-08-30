@@ -119,6 +119,10 @@
         "prefix": "InnerRuinsTP",
         "body": [ "InnerRuinsTP" ]
     },
+    "kii": {
+        "prefix": "kii",
+        "body": [ "kii" ]
+    },
     "Launch": {
         "prefix": "Launch",
         "body": [ "Launch" ]
