@@ -4,7 +4,7 @@
     },
     "wordPattern": "\\w+(\\.\\w+)?",
     "indentationRules": {
-        "increaseIndentPattern": "^.*:$",
+        "increaseIndentPattern": "^.*:\\s*(#.*)?$",
         "decreaseIndentPattern": "\\n" // Never matches
     }
 }
