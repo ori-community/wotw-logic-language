@@ -56,11 +56,11 @@
                     "name": "variable.other.enummember"
                 },
                 {
-                    "match": "\\b(Blaze|Boss|Bow|BreakWall|Damage|Danger|Energy|Flash|Grenade|Health|Keystone|Ore|Sentry|SentryJump|SwordSJump|HammerSJump|SentryBreak|SentryBurn|ShardSlot|Shuriken|ShurikenBreak|Spear|SpiritLight)=\\d+\\b",
+                    "match": "\\b(Blaze|BlazeSwap|Boss|Bow|BreakWall|Damage|Danger|Energy|Flash|Grenade|GrenadeRedirect|Health|Keystone|Ore|Sentry|SentryJump|SwordSJump|HammerSJump|SentryBreak|SentryBurn|SentryRedirect|SentrySwap|ShardSlot|Shuriken|ShurikenBreak|Spear|SpearJump|SpiritLight)=\\d+\\b",
                     "name": "string"
                 },
                 {
-                    "match": "\\b(Arcing|Bash|Blaze|Bow|BreakCrystal|Burrow|BurrowsTP|Catalyst|Dash|Deflector|DenTP|DepthsTP|DoubleJump|EastPoolsTP|EastWastesTP|EastWoodsTP|EnergyHarvest|Flap|Flash|Fracture|GladesTP|Glide|Grapple|Grenade|Hammer|HammerBreak|HollowTP|InnerRuinsTP|Launch|LifeHarvest|Magnet|MarshTP|OuterRuinsTP|Overflow|ReachTP|RemoveKillPlane|Regenerate|Seir|Sentry|ShriekTP|Shuriken|Spear|SpearBreak|Sticky|Sword|TripleJump|Thorn|UltraBash|UltraGrapple|WallJump|WaterBreath|WaterDash|Water|WellspringTP|WestPoolsTP|WestWastesTP|WestWoodsTP|WillowTP)\\b",
+                    "match": "\\b(Arcing|Bash|Blaze|Bow|BreakCrystal|Burrow|BurrowsTP|Catalyst|Dash|Deflector|DenTP|DepthsTP|DoubleJump|EastPoolsTP|EastWastesTP|EastWoodsTP|EnergyHarvest|Flap|Flash|FlashSwap|Fracture|GladesTP|Glide|GlideHammerJump|GlideJump|Grapple|Grenade|GrenadeCancel|GrenadeJump|Hammer|HammerBreak|HammerJump|HollowTP|InnerRuinsTP|Launch|LaunchSwap|LifeHarvest|Magnet|MarshTP|OuterRuinsTP|Overflow|PauseHover|ReachTP|RemoveKillPlane|Regenerate|Seir|Sentry|ShriekTP|Shuriken|Spear|SpearBreak|Sticky|Sword|SwordJump|TripleJump|Thorn|UltraBash|UltraGrapple|WallJump|WaterBreath|WaterDash|Water|Wavedash|WellspringTP|WestPoolsTP|WestWastesTP|WestWoodsTP|WillowTP)\\b",
                     "name": "string"
                 },
                 {
