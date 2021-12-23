@@ -18,7 +18,7 @@
                     }
                 },
                 {
-                    "match": "\\b(anchor) (\\w+(?:.\\w+)?) (at) (-?\\d+, ?-?\\d+)?:",
+                    "match": "\\b(anchor) (\\w+(?:.\\w+)?)(?: (at) (-?\\d+, ?-?\\d+))?:",
                     "captures": {
                         "1": { "name": "keyword" },
                         "2": { "name": "entity.name.function" },
