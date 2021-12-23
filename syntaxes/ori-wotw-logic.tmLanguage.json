@@ -47,27 +47,67 @@
         },
         "requirement": {
             "patterns": [
-                {
-                    "match": "\\bfree\\b",
-                    "name": "variable.other.constant"
-                },
-                {
-                    "match": "\\b(moki|gorlek|kii|unsafe)\\b",
-                    "name": "variable.other.enummember"
-                },
-                {
-                    "match": "\\b(Blaze|BlazeSwap|Boss|Bow|BreakWall|Damage|Danger|Energy|Flash|Grenade|GrenadeRedirect|Health|Keystone|Ore|Sentry|SentryJump|SwordSJump|HammerSJump|SentryBreak|SentryBurn|SentryRedirect|SentrySwap|ShardSlot|Shuriken|ShurikenBreak|Spear|SpearJump|SpiritLight)=\\d+\\b",
-                    "name": "string"
-                },
-                {
-                    "match": "\\b(Arcing|Bash|Blaze|Bow|BreakCrystal|Burrow|BurrowsTP|Catalyst|Dash|Deflector|DenTP|DepthsTP|DoubleJump|EastPoolsTP|EastWastesTP|EastWoodsTP|EnergyHarvest|Flap|Flash|FlashSwap|Fracture|GladesTP|Glide|GlideHammerJump|GlideJump|Grapple|Grenade|GrenadeCancel|GrenadeJump|Hammer|HammerBreak|HammerJump|HollowTP|InnerRuinsTP|Launch|LaunchSwap|LifeHarvest|Magnet|MarshTP|OuterRuinsTP|Overflow|PauseHover|ReachTP|RemoveKillPlane|Regenerate|Seir|Sentry|ShriekTP|Shuriken|Spear|SpearBreak|Sticky|Sword|SwordJump|TripleJump|Thorn|UltraBash|UltraGrapple|WallJump|WaterBreath|WaterDash|Water|Wavedash|WellspringTP|WestPoolsTP|WestWastesTP|WestWoodsTP|WillowTP)\\b",
-                    "name": "string"
-                },
-                {
-                    "match": "\\bCombat=((\\d+x)?(Mantis|Slug|WeakSlug|BombSlug|CorruptSlug|SneezeSlug|ShieldSlug|Lizard|Bat|Hornbug|Skeeto|SmallSkeeto|Bee|Nest|Crab|SpinCrab|Tentacle|Balloon|Miner|MaceMiner|ShieldMiner|CrystalMiner|ShieldCrystalMiner|Sandworm|Spiderling|EnergyRefill)\\+)*(\\d+x)?(Mantis|Slug|WeakSlug|BombSlug|CorruptSlug|SneezeSlug|ShieldSlug|Lizard|Bat|Hornbug|Skeeto|SmallSkeeto|Bee|Nest|Crab|SpinCrab|Tentacle|Balloon|Miner|MaceMiner|ShieldMiner|CrystalMiner|ShieldCrystalMiner|Sandworm|Spiderling|EnergyRefill)\\b",
-                    "name": "string"
-                }
+                { "include": "#free" },
+                { "include": "#difficulty" },
+                { "include": "#energySkill" },
+                { "include": "#destroyAmount" },
+                { "include": "#resource" },
+                { "include": "#energyGlitch" },
+                { "include": "#combat" },
+                { "include": "#skill" },
+                { "include": "#shard" },
+                { "include": "#teleporter" },
+                { "include": "#destroy" },
+                { "include": "#glitch" }
             ]
+        },
+        "free": {
+            "match": "\\bfree\\b",
+            "name": "variable.other.constant"
+        },
+        "difficulty": {
+            "match": "\\b(moki|gorlek|kii|unsafe)\\b",
+            "name": "variable.other.enummember"
+        },
+        "energySkill": {
+            "match": "\\b(Blaze|Bow|Flash|Grenade|Sentry|Shuriken|Spear)=\\d+\\b",
+            "name": "string"
+        },
+        "destroyAmount": {
+            "match": "\\b(Boss|BreakWall)=\\d+\\b",
+            "name": "string"
+        },
+        "resource": {
+            "match": "\\b(Damage|Danger|Energy|Health|Keystone|Ore|ShardSlot|SpiritLight)=\\d+\\b",
+            "name": "string"
+        },
+        "energyGlitch": {
+            "match": "\\b(BlazeSwap|GrenadeRedirect|SentryJump|SwordSJump|HammerSJump|SentryBreak|SentryBurn|SentryRedirect|SentrySwap|ShurikenBreak|SpearJump)=\\d+\\b",
+            "name": "string"
+        },
+        "combat": {
+            "match": "\\bCombat=((\\d+x)?(Mantis|Slug|WeakSlug|BombSlug|CorruptSlug|SneezeSlug|ShieldSlug|Lizard|Bat|Hornbug|Skeeto|SmallSkeeto|Bee|Nest|Crab|SpinCrab|Tentacle|Balloon|Miner|MaceMiner|ShieldMiner|CrystalMiner|ShieldCrystalMiner|Sandworm|Spiderling|EnergyRefill)\\+)*(\\d+x)?(Mantis|Slug|WeakSlug|BombSlug|CorruptSlug|SneezeSlug|ShieldSlug|Lizard|Bat|Hornbug|Skeeto|SmallSkeeto|Bee|Nest|Crab|SpinCrab|Tentacle|Balloon|Miner|MaceMiner|ShieldMiner|CrystalMiner|ShieldCrystalMiner|Sandworm|Spiderling|EnergyRefill)\\b",
+            "name": "string"
+        },
+        "skill": {
+            "match": "\\b(Bash|Blaze|Bow|Burrow|Dash|DoubleJump|Flap|Flash|Glide|Grapple|Grenade|Hammer|Launch|Regenerate|Seir|Sentry|Shuriken|Spear|Sword|WallJump|WaterBreath|WaterDash|Water)\\b",
+            "name": "string"
+        },
+        "shard": {
+            "match": "\\b(Arcing|Catalyst|Deflector|EnergyHarvest|Fracture|LifeHarvest|Magnet|Overflow|Sticky|TripleJump|Thorn|UltraBash|UltraGrapple)\\b",
+            "name": "string"
+        },
+        "teleporter": {
+            "match": "\\b(BurrowsTP|DenTP|DepthsTP|EastPoolsTP|EastWastesTP|EastWoodsTP|GladesTP|HollowTP|InnerRuinsTP|MarshTP|OuterRuinsTP|ReachTP|ShriekTP|WellspringTP|WestPoolsTP|WestWastesTP|WestWoodsTP|WillowTP)\\b",
+            "name": "string"
+        },
+        "destroy": {
+            "match": "\\b(BreakCrystal)\\b",
+            "name": "string"
+        },
+        "glitch": {
+            "match": "\\b(FlashSwap|GlideHammerJump|GlideJump|GrenadeCancel|GrenadeJump|HammerBreak|HammerJump|LaunchSwap|PauseHover|RemoveKillPlane|SpearBreak|SwordJump|Wavedash)\\b",
+            "name": "string"
         },
         "comment": {
             "match": "#.*",
