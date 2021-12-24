@@ -12,6 +12,7 @@ Language support for editing areas.wotw in [Visual Studio Code](https://code.vis
 ## Features
 
 - Syntax Highlighting
+- Syntax error messages
 - Autocompletion suggestions
 - Ctrl+Click a connection to jump to the target anchor
 - Ctrl+Click a state/quest requirement to jump to the state/quest definition
