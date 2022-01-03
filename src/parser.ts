@@ -306,6 +306,8 @@ function parseAnchor(status: ParseStatus): ParseResult<undefined> {
     if (!indentResult.success) { return indentResult; }
     const indent = indentResult.result;
 
+    let first = true;
+
     while (true) {
         const keyword = parseWord(status);
         if (keyword === null) { return fail(["refill", "state", "quest", "pickup", "conn"], status); }
@@ -325,7 +327,15 @@ function parseAnchor(status: ParseStatus): ParseResult<undefined> {
                 const connection = parseConnection(status);
                 if (!connection.success) { return connection; }
                 break;
-            } default: return fail(["refill", "state", "quest", "pickup", "conn"], status);
+            } case "nospawn": {
+                if (first) {
+                    if (parseLineBreak(status) === null) { return fail(Token.lineBreak, status); }
+                    break;
+                }
+            } default:
+                const expected = ["refill", "state", "quest", "pickup", "conn"];
+                if (first) { expected.push("nospawn"); }
+                return fail(expected, status);
         }
 
         const nextIndent = checkSpaces(status);
@@ -335,6 +345,8 @@ function parseAnchor(status: ParseStatus): ParseResult<undefined> {
             return succeed(undefined);
         }
         status.progress(indent);
+
+        first = false;
     }
 }
 

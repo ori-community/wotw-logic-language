@@ -41,6 +41,10 @@
                     }
                 },
                 {
+                    "match": "\\bnospawn\\b",
+                    "name": "keyword"
+                },
+                {
                     "match": "\\b(OR|, *)\\b",
                     "name": "keyword.control"
                 }
