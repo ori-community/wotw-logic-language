@@ -2,7 +2,7 @@
     "name": "logic-language",
     "displayName": "Ori WotW Logic Language",
     "description": "Support for the areas.wotw language",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "publisher": "orirando",
     "license": "MIT",
     "repository": {

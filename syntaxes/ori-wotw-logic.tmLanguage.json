@@ -52,7 +52,7 @@
         },
         "requirement": {
             "patterns": [
-                { "include": "#free" },
+                { "include": "#constant" },
                 { "include": "#difficulty" },
                 { "include": "#energySkill" },
                 { "include": "#destroyAmount" },
@@ -66,8 +66,8 @@
                 { "include": "#glitch" }
             ]
         },
-        "free": {
-            "match": "\\bfree\\b",
+        "constant": {
+            "match": "\\bfree|Impossible\\b",
             "name": "variable.other.constant"
         },
         "difficulty": {

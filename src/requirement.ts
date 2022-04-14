@@ -37,6 +37,7 @@ export enum Requirement {
     HammerJump,
     HollowTP,
     InnerRuinsTP,
+    Impossible,
     kii,
     Launch,
     LaunchSwap,
