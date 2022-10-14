@@ -157,6 +157,7 @@ function parseCombat(status: ParseStatus): ParseResult<undefined> {
 }
 
 function parseRequirementLine(status: ParseStatus): ParseResult<undefined> {
+    let pastOr = false;
     while (true) {
         const offset = status.offset;
 
@@ -188,9 +189,14 @@ function parseRequirementLine(status: ParseStatus): ParseResult<undefined> {
             return parseRequirementGroup(status);
         }
 
-        if (eat(status, ":") || eat(status, ",")) {
-           eat(status, " ");
-        } else if (!eat(status, " OR ")) {
+        if (eat(status, ":")) {
+            eat(status, " ");
+        } else if (eat(status, ",")) {
+            if (pastOr) { return fail("no commas after ORs", status); }
+            eat(status, " ");
+        } else if (eat(status, " OR ")) {
+            pastOr = true;
+        } else {
             if (parseLineBreak(status) === null) { return fail(Token.requirementSeparator, status); }
             return succeed(undefined);
         }
