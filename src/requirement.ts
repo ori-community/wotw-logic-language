@@ -5,6 +5,7 @@ export enum Requirement {
     Bash,
     Blaze,
     Bow,
+    BowCancel,
     BreakCrystal,
     Burrow,
     BurrowsTP,

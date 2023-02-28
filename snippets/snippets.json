@@ -15,6 +15,10 @@
         "prefix": "Bow",
         "body": [ "Bow" ]
     },
+    "BowCancel": {
+        "prefix": "BowCancel",
+        "body": [ "BowCancel" ]
+    },
     "BreakCrystal": {
         "prefix": "BreakCrystal",
         "body": [ "BreakCrystal" ]

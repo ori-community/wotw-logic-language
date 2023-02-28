@@ -111,7 +111,7 @@
             "name": "string"
         },
         "glitch": {
-            "match": "\\b(FlashSwap|GlideHammerJump|GlideJump|GrenadeCancel|GrenadeJump|HammerBreak|HammerJump|LaunchSwap|PauseHover|RemoveKillPlane|SpearBreak|SwordJump|Wavedash)\\b",
+            "match": "\\b(BowCancel|FlashSwap|GlideHammerJump|GlideJump|GrenadeCancel|GrenadeJump|HammerBreak|HammerJump|LaunchSwap|PauseHover|RemoveKillPlane|SpearBreak|SwordJump|Wavedash)\\b",
             "name": "string"
         },
         "comment": {
