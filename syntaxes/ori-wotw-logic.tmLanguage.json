@@ -41,7 +41,7 @@
                     }
                 },
                 {
-                    "match": "\\bnospawn\\b",
+                    "match": "\\b(nospawn|tprestriction)\\b",
                     "name": "keyword"
                 },
                 {

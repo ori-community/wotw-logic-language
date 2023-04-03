@@ -119,8 +119,8 @@ function parseLineBreak(status: ParseStatus): string | null {
 function parseSpaces(status: ParseStatus): string | null {
     return parseString(status, /^ */);
 }
-function parseFree(status: ParseStatus): string | null {
-    return parseString(status, /^\s*free/);
+function parseFreeOrImpossible(status: ParseStatus): string | null {
+    return parseString(status, /^\s*(free|Impossible)/);
 }
 function checkSpaces(status: ParseStatus): number {
     const match = status.remaining.match(/ */);
@@ -205,7 +205,7 @@ function parseRequirementLine(status: ParseStatus): ParseResult<undefined> {
 function parseRequirementGroup(status: ParseStatus): ParseResult<undefined> {
     if (!eat(status, ":")) { return fail(":", status); }
 
-    if (parseFree(status) !== null) {
+    if (parseFreeOrImpossible(status) !== null) {
         if (parseLineBreak(status) === null) { return fail(Token.lineBreak, status); }
         return succeed(undefined);
     }
@@ -312,13 +312,19 @@ function parseAnchor(status: ParseStatus): ParseResult<undefined> {
     if (!indentResult.success) { return indentResult; }
     const indent = indentResult.result;
 
-    let first = true;
-
     while (true) {
         const keyword = parseWord(status);
-        if (keyword === null) { return fail(["refill", "state", "quest", "pickup", "conn"], status); }
+        const expected = ["nospawn", "tprestriction", "refill", "state", "quest", "pickup", "conn"];
+        if (keyword === null) { return fail(expected, status); }
 
         switch(keyword) {
+            case "nospawn":
+                if (parseLineBreak(status) === null) { return fail(Token.lineBreak, status); }
+                break;
+            case "tprestriction":
+                const restriction = parseRequirementGroup(status);
+                if (!restriction.success) { return restriction; }
+                break;
             case "refill":
                 const refill = parseRefill(status);
                 if (!refill.success) { return refill; }
@@ -333,14 +339,7 @@ function parseAnchor(status: ParseStatus): ParseResult<undefined> {
                 const connection = parseConnection(status);
                 if (!connection.success) { return connection; }
                 break;
-            } case "nospawn": {
-                if (first) {
-                    if (parseLineBreak(status) === null) { return fail(Token.lineBreak, status); }
-                    break;
-                }
             } default:
-                const expected = ["refill", "state", "quest", "pickup", "conn"];
-                if (first) { expected.push("nospawn"); }
                 return fail(expected, status);
         }
 
@@ -351,8 +350,6 @@ function parseAnchor(status: ParseStatus): ParseResult<undefined> {
             return succeed(undefined);
         }
         status.progress(indent);
-
-        first = false;
     }
 }
 
