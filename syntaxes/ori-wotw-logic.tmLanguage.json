@@ -87,7 +87,7 @@
             "name": "string"
         },
         "energyGlitch": {
-            "match": "\\b(BlazeSwap|GrenadeRedirect|SentryJump|SwordSJump|HammerSJump|SentryBreak|SentryBurn|SentryRedirect|SentrySwap|ShurikenBreak|SpearJump)=\\d+\\b",
+            "match": "\\b(AbilitySwap|BlazeSwap|GrenadeRedirect|SentryJump|SwordSJump|HammerSJump|SentryBreak|SentryBurn|SentryRedirect|SentrySwap|ShurikenBreak|SpearJump)=\\d+\\b",
             "name": "string"
         },
         "combat": {
@@ -111,7 +111,7 @@
             "name": "string"
         },
         "glitch": {
-            "match": "\\b(BowCancel|FlashSwap|GlideHammerJump|GlideJump|GrenadeCancel|GrenadeJump|HammerBreak|HammerJump|LaunchSwap|PauseHover|RemoveKillPlane|SpearBreak|SwordJump|Wavedash)\\b",
+            "match": "\\b(AerialHammerJump|BowCancel|CoyoteHammerJump|DashBashChain|DoubleJumpBashChain|FlashSwap|GlideBashChain|GlideHammerJump|GlideJump|GrenadeCancel|GrenadeJump|GroundedHammerJump|HammerBreak|HammerExtension|LaunchBashChain|LaunchSwap|PauseFloat|RemoveKillPlane|SpearBreak|SwordJump|WallHammerJump|Wavedash)\\b",
             "name": "string"
         },
         "comment": {

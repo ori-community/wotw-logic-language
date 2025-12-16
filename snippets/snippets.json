@@ -1,4 +1,8 @@
 {
+    "AerialHammerJump": {
+        "prefix": "AerialHammerJump",
+        "body": [ "AerialHammerJump" ]
+    },
     "Arcing": {
         "prefix": "Arcing",
         "body": [ "Arcing" ]
@@ -35,9 +39,17 @@
         "prefix": "Catalyst",
         "body": [ "Catalyst" ]
     },
+    "CoyoteHammerJump": {
+        "prefix": "CoyoteHammerJump",
+        "body": [ "CoyoteHammerJump" ]
+    },
     "Dash": {
         "prefix": "Dash",
         "body": [ "Dash" ]
+    },
+    "DashBashChain": {
+        "prefix": "DashBashChain",
+        "body": [ "DashBashChain" ]
     },
     "Deflector": {
         "prefix": "Deflector",
@@ -54,6 +66,10 @@
     "DoubleJump": {
         "prefix": "DoubleJump",
         "body": [ "DoubleJump" ]
+    },
+    "DoubleJumpBashChain": {
+        "prefix": "DoubleJumpBashChain",
+        "body": [ "DoubleJumpBashChain" ]
     },
     "EastPoolsTP": {
         "prefix": "EastPoolsTP",
@@ -79,6 +95,10 @@
         "prefix": "Flash",
         "body": [ "Flash" ]
     },
+    "FlashSwap": {
+        "prefix": "FlashSwap",
+        "body": [ "FlashSwap" ]
+    },
     "Fracture": {
         "prefix": "Fracture",
         "body": [ "Fracture" ]
@@ -95,6 +115,18 @@
         "prefix": "Glide",
         "body": [ "Glide" ]
     },
+    "GlideBashChain": {
+        "prefix": "GlideBashChain",
+        "body": [ "GlideBashChain" ]
+    },
+    "GlideHammerJump": {
+        "prefix": "GlideHammerJump",
+        "body": [ "GlideHammerJump" ]
+    },
+    "GlideJump": {
+        "prefix": "GlideJump",
+        "body": [ "GlideJump" ]
+    },
     "gorlek": {
         "prefix": "gorlek",
         "body": [ "gorlek" ]
@@ -107,6 +139,14 @@
         "prefix": "Grenade",
         "body": [ "Grenade" ]
     },
+    "GrenadeCancel": {
+        "prefix": "GrenadeCancel",
+        "body": [ "GrenadeCancel" ]
+    },
+    "GroundedHammerJump": {
+        "prefix": "GroundedHammerJump",
+        "body": [ "GroundedHammerJump" ]
+    },
     "Hammer": {
         "prefix": "Hammer",
         "body": [ "Hammer" ]
@@ -115,9 +155,17 @@
         "prefix": "HammerBreak",
         "body": [ "HammerBreak" ]
     },
+    "HammerExtension": {
+        "prefix": "HammerExtension",
+        "body": [ "HammerExtension" ]
+    },
     "HollowTP": {
         "prefix": "HollowTP",
         "body": [ "HollowTP" ]
+    },
+    "Impossible": {
+        "prefix": "Impossible",
+        "body": [ "Impossible" ]
     },
     "InnerRuinsTP": {
         "prefix": "InnerRuinsTP",
@@ -130,6 +178,14 @@
     "Launch": {
         "prefix": "Launch",
         "body": [ "Launch" ]
+    },
+    "LaunchBashChain": {
+        "prefix": "LaunchBashChain",
+        "body": [ "LaunchBashChain" ]
+    },
+    "LaunchSwap": {
+        "prefix": "LaunchSwap",
+        "body": [ "LaunchSwap" ]
     },
     "LifeHarvest": {
         "prefix": "LifeHarvest",
@@ -154,6 +210,10 @@
     "Overflow": {
         "prefix": "Overflow",
         "body": [ "Overflow" ]
+    },
+    "PauseFloat": {
+        "prefix": "PauseFloat",
+        "body": [ "PauseFloat" ]
     },
     "ReachTP": {
         "prefix": "ReachTP",
@@ -199,6 +259,10 @@
         "prefix": "Sword",
         "body": [ "Sword" ]
     },
+    "SwordJump": {
+        "prefix": "SwordJump",
+        "body": [ "SwordJump" ]
+    },
     "TripleJump": {
         "prefix": "TripleJump",
         "body": [ "TripleJump" ]
@@ -219,6 +283,10 @@
         "prefix": "unsafe",
         "body": [ "unsafe" ]
     },
+    "WallHammerJump": {
+        "prefix": "WallHammerJump",
+        "body": [ "WallHammerJump" ]
+    },
     "WallJump": {
         "prefix": "WallJump",
         "body": [ "WallJump" ]
@@ -234,6 +302,10 @@
     "Water": {
         "prefix": "Water",
         "body": [ "Water" ]
+    },
+    "WaveDash": {
+        "prefix": "WaveDash",
+        "body": [ "WaveDash" ]
     },
     "WellspringTP": {
         "prefix": "WellspringTP",
@@ -255,9 +327,17 @@
         "prefix": "WillowTP",
         "body": [ "WillowTP" ]
     },
+    "AbilitySwap=": {
+        "prefix": "AbilitySwap=",
+        "body": [ "AbilitySwap=" ]
+    },
     "Blaze=": {
         "prefix": "Blaze=",
         "body": [ "Blaze=" ]
+    },
+    "BlazeSwap=": {
+        "prefix": "BlazeSwap=",
+        "body": [ "BlazeSwap=" ]
     },
     "Boss=": {
         "prefix": "Boss=",
@@ -270,6 +350,10 @@
     "BreakWall=": {
         "prefix": "BreakWall=",
         "body": [ "BreakWall=" ]
+    },
+    "Combat=": {
+        "prefix": "Combat=",
+        "body": [ "Combat=" ]
     },
     "Damage=": {
         "prefix": "Damage=",
@@ -291,6 +375,14 @@
         "prefix": "Grenade=",
         "body": [ "Grenade=" ]
     },
+    "GrenadeRedirect=": {
+        "prefix": "GrenadeRedirect=",
+        "body": [ "GrenadeRedirect=" ]
+    },
+    "HammerSJump=": {
+        "prefix": "HammerSJump=",
+        "body": [ "HammerSJump=" ]
+    },
     "Health=": {
         "prefix": "Health=",
         "body": [ "Health=" ]
@@ -311,14 +403,6 @@
         "prefix": "SentryJump=",
         "body": [ "SentryJump=" ]
     },
-    "SwordSJump=": {
-        "prefix": "SwordSJump=",
-        "body": [ "SwordSJump=" ]
-    },
-    "HammerSJump=": {
-        "prefix": "HammerSJump=",
-        "body": [ "HammerSJump=" ]
-    },
     "SentryBreak=": {
         "prefix": "SentryBreak=",
         "body": [ "SentryBreak=" ]
@@ -326,6 +410,14 @@
     "SentryBurn=": {
         "prefix": "SentryBurn=",
         "body": [ "SentryBurn=" ]
+    },
+    "SentryRedirect=": {
+        "prefix": "SentryRedirect=",
+        "body": [ "SentryRedirect=" ]
+    },
+    "SentrySwap=": {
+        "prefix": "SentrySwap=",
+        "body": [ "SentrySwap=" ]
     },
     "ShardSlot=": {
         "prefix": "ShardSlot=",
@@ -343,12 +435,16 @@
         "prefix": "Spear=",
         "body": [ "Spear=" ]
     },
+    "SpearJump=": {
+        "prefix": "SpearJump=",
+        "body": [ "SpearJump=" ]
+    },
     "SpiritLight=": {
         "prefix": "SpiritLight=",
         "body": [ "SpiritLight=" ]
     },
-    "Combat=": {
-        "prefix": "Combat=",
-        "body": [ "Combat=" ]
+    "SwordSJump=": {
+        "prefix": "SwordSJump=",
+        "body": [ "SwordSJump=" ]
     }
 }
