@@ -72,6 +72,7 @@ export enum Requirement {
     Thorn,
     UltraBash,
     UltraGrapple,
+    Unpopular,
     unsafe,
     WallHammerJump,
     WallJump,

@@ -291,6 +291,43 @@ function parseConnection(status: ParseStatus, state: boolean = false): ParseResu
 
     return parseRequirementGroup(status);
 }
+function parseDoorGroup(status: ParseStatus): ParseResult<undefined> {
+    if (!eat(status, ":")) { return fail(":", status); }
+
+    const indentResult = parseIndent(status);
+    if (!indentResult.success) { return indentResult; }
+    const indent = indentResult.result;
+
+    const id = parseWord(status);
+    if (id !== "id") { return fail("id", status); }
+    if(!eat(status, ":")) { return fail(":", status); }
+    if (!eat(status, " ")) { return fail(" ", status); }
+    if (parseInteger(status) === null) { return fail(Token.integer, status); }
+    if (parseLineBreak(status) === null) { return fail(Token.requirementSeparator, status); }
+
+    var nextIndent = checkSpaces(status);
+    if (nextIndent != indent) { return fail([Token.lineBreak, Token.dedent], status); }
+    parseSpaces(status)
+    const target = parseWord(status);
+    if (target !== "target") { return fail("target", status); }
+    if(!eat(status, ":")) { return fail(":", status); }
+    if (!eat(status, " ")) { return fail(" ", status); }
+    if (parseLogicIdentifier(status) === null) { return fail(Token.word, status); }
+    if (parseLineBreak(status) === null) { return fail(Token.lineBreak, status); }
+
+    nextIndent = checkSpaces(status);
+    if (nextIndent != indent) { return fail([Token.lineBreak, Token.dedent], status); }
+    parseSpaces(status);
+    const enter = parseWord(status);
+    if (enter !== "enter") { return fail("enter", status); }
+    const restriction = parseRequirementGroup(status);
+    if (!restriction.success) { return restriction; }
+
+    status.indentStack.pop();
+
+    return succeed(undefined);
+}
+
 function parseAnchor(status: ParseStatus): ParseResult<undefined> {
     if (!eat(status, " ")) { return fail(" ", status); }
 
@@ -314,10 +351,14 @@ function parseAnchor(status: ParseStatus): ParseResult<undefined> {
 
     while (true) {
         const keyword = parseWord(status);
-        const expected = ["nospawn", "tprestriction", "refill", "state", "quest", "pickup", "conn"];
+        const expected = ["nospawn", "tprestriction", "refill", "state", "quest", "pickup", "conn", "door"];
         if (keyword === null) { return fail(expected, status); }
 
         switch(keyword) {
+            case "door":
+                const door = parseDoorGroup(status);
+                if (!door.success) { return door; }
+                break;
             case "nospawn":
                 if (parseLineBreak(status) === null) { return fail(Token.lineBreak, status); }
                 break;

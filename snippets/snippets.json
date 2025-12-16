@@ -279,6 +279,10 @@
         "prefix": "UltraGrapple",
         "body": [ "UltraGrapple" ]
     },
+    "Unpopular": {
+        "prefix": "Unpopular",
+        "body": [ "Unpopular" ]
+    },
     "unsafe": {
         "prefix": "unsafe",
         "body": [ "unsafe" ]
